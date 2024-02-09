@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 
-int check_num(int num);
-int modify(int num);
-void append(int num);
-void zero_out(int num);
+int check_num(int &size, int array[], int num);
+int modify(int &size, int array[], int num, int num2);
+void append(int &size, int array[], int num);
+int zero_out(int &size, int array[], int num);
