@@ -24,13 +24,9 @@ void append(int &size, int array[], int num) {
 	int* new_data = new int[size];
 	for (int i = 0; i < size; i++) {
 		new_data[i] = array[i];
-		cout << i << " ";
 	}
-	cout << 3 << endl;
 	new_data[size-1] = num;
-	cout << 2 << endl;
 	delete[] array;
-	cout << 1 << endl;
 	array = new_data;
 	cout << endl 
 		<< "Append Successful." 
